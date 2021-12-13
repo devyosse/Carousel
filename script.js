@@ -13,17 +13,20 @@ let current = 0;
 
 
 setInterval(function () {
-    Clearr();
+
     if (current < Img.length) {
+        Clearr();
         current++;
         Img[current].style.display = "block";
         console.log(current)
     }
     else{
+        Clearr();
         current = 0;
         Img[current].style.display = "block";
+        current++;
     }
-}, 1000);
+}, 2000);
 
 
 function Clearr() {
