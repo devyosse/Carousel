@@ -11,23 +11,19 @@ let Btnleft = document.getElementById('beforebutton');
 let BtnRight = document.getElementById('afterbutton');
 let current = 0;
 
-
 setInterval(function () {
-
     if (current < Img.length) {
         Clearr();
         current++;
         Img[current].style.display = "block";
         console.log(current)
-    }
-    else{
+    } else {
         Clearr();
         current = 0;
         Img[current].style.display = "block";
         current++;
     }
 }, 2000);
-
 
 function Clearr() {
     for (let i = 0; i < image.length; i++) {
