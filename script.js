@@ -11,11 +11,13 @@ let Btnleft = document.getElementById('beforebutton');
 let BtnRight = document.getElementById('afterbutton');
 let current = 0;
 
-setInterval(function () {
-    if (current === 0) {
-        current++;
-    }
-}, 1000);
+//**
+// setInterval(function () {
+//     if (current === 0) {
+//         current++;
+//     }
+// }, 1000);
+//
 
 function Clearr() {
     for (let i = 0; i < image.length; i++) {
@@ -55,6 +57,5 @@ BtnRight.addEventListener("click", () => {
     }
     slideRight();
 })
-
 
 Start();
