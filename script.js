@@ -13,10 +13,15 @@ let current = 0;
 
 
 setInterval(function () {
-    if (current >= 0) {
-        Img[current + 1].style.display = "block";
+    Clearr();
+    if (current < Img.length) {
         current++;
+        Img[current].style.display = "block";
         console.log(current)
+    }
+    else{
+        current = 0;
+        Img[current].style.display = "block";
     }
 }, 1000);
 
@@ -34,16 +39,14 @@ function Start() {
 
 function slideLeft() {
     Clearr();
-    Img[current - 1].style.display = "block";
     current--;
+    Img[current].style.display = "block";
 }
 
 function slideRight() {
     Clearr();
-    Img[current + 1].style.display = "block";
     current++;
-
-
+    Img[current].style.display = "block";
 }
 
 Btnleft.addEventListener("click", () => {
